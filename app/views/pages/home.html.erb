@@ -1,1 +1,56 @@
-<h2>Home</h2>
+<h1>Home</h1>
+
+
+
+
+    
+
+        
+      <section class="media-list">
+				<div class="container">
+				    <% @mediaimages.each do |mediaimage| %>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="media">
+								<div class="row">
+									<div class="col-md-6 col-xs-12">
+										<div class="thumbnail">
+										 <%= image_tag mediaimage.image %>
+										</div>
+									</div>
+									<div class="col-md-5 col-md-offset-1">
+										<div class="media-details">
+											<h2 class="media-title">
+											    <%= mediaimage.title %>
+											</h2>
+											<p class="media-position">
+											 <%= number_to_currency mediaimage.position %>
+											</p>
+										      
+											<p> 
+											<%= mediaimage.description %>
+											</p>
+                                           
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.row -->
+					<% end %>
+					</div>
+					</section>
+			 
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
